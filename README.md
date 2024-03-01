@@ -1,5 +1,6 @@
 
 Firstly lets recall that the squared error can be decomposed into bias, variance and noise:
+
 E[(hD(x) − y)2] = E[(hD(x) − h¯(x))2] + E[(h¯(x) − y¯(x))2] + E[(y¯(x) − y(x)2] 
 
  
