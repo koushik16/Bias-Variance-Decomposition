@@ -18,6 +18,7 @@ we will need to implement four functions: computeybar, computehbar, computevaria
 Also we may want to use the norm probability density function, which you can directly use some package to call this function if you find some. With the help of computeybar you can now compute the “noise” variable within biasvariancedemo.
 
 Figure 4: Data Distribution
+
 ![image](https://github.com/koushik16/Bias-Variance-Decomposition/assets/63333977/c0d4d690-4b6c-4094-838e-08bb9c92052e)
 
 
