@@ -1,13 +1,17 @@
 
 Firstly lets recall that the squared error can be decomposed into bias, variance and noise:
 
-E[(hD(x) − y)2] = E[(hD(x) − h¯(x))2] + E[(h¯(x) − y¯(x))2] + E[(y¯(x) − y(x)2] 
+> E[(hD(x) − y)2] = E[(hD(x) − h¯(x))2] + E[(h¯(x) − y¯(x))2] + E[(y¯(x) − y(x)2] 
 
  
-We will now create a data set for which we can approximately compute this decomposition. The function
-toydata generates a binary data set with class 1 and 2. Both are sampled from Gaussian distributions:
-p(x|y = 1) ∼ N (0, I) and p(⃗x|y = 2) ∼ N (µ2, I),	(4) where µ2 = [2; 2]⊤ (the global variable OFFSET = 2 regulates these values: µ2 = [OFFSET ; OFFSET]⊤).
-You will need to implement four functions: computeybar, computehbar, computevariance and biasvari- ancedemo.
+We then create a data set for which we can approximately compute this decomposition. The function to our data generates a binary data set with class 1 and 2. 
+
+Both are sampled from Gaussian distributions:
+
+>  p(x|y = 1) ∼ N (0, I) and p(x|y = 2) ∼ N (µ2, I),	(4) where µ2 = [2; 2]^⊤
+(the global variable OFFSET = 2 regulates these values: µ2 = [OFFSET ; OFFSET]⊤).
+
+we will need to implement four functions: computeybar, computehbar, computevariance and biasvari- ancedemo.
 
 (a)	Noise (computeybar):  First we focus on the noise.  For this, you need to compute y¯(x) in computeybar. With  the  equations,  p(x|y  =  1)  ∼ N (0, I) and p(x|y  =  2)  ∼ N (µ2, I),  you  can  compute  the  probability p(⃗x|y).  Then use Bayes rule to compute p(y|x).
 
